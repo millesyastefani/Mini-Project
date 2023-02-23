@@ -1,0 +1,191 @@
+body {
+    background-color: #f7f1e3;
+}
+/* Navbar Header */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+header {
+    padding: 5px 15px;
+    margin-right: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ef5777;
+}
+.menu {
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12px;
+}
+.logo {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Main */
+main {
+    margin-top: 100px;
+}
+/* Text About*/
+.column {
+    display: flex;
+    text-align: justify;
+}
+.column h1 {
+    margin-left: 100px;
+    font-size: 60px;
+}
+.column p {
+    margin: auto;
+    font-size: 19px;
+    margin-left: 190px;
+}
+.img-logo {
+    display: block;
+    margin: auto;
+    margin-top: 34px;
+}
+/* Text Theater */
+.text {
+    margin-top: 40px;
+}
+.text h1 {
+    float: right;
+    font-size: 60px;
+    margin: auto;
+    margin-top: 100px;
+    display: block;
+    margin-right: 100px;
+}
+.text p {
+    margin: auto;
+    font-size: 19px;
+    margin-left: 80px;
+}
+/* Image */
+.img-logo {
+    display: block;
+    margin: auto;
+    margin-top: 34px;
+    
+}
+.img-logo1 {
+    margin-top: 34px;
+    width: 50%;
+    margin-left: 370px;
+}
+/* Footer */
+footer {
+    background: bisque;
+    padding: 3px;
+    font-weight: 600;
+}
+.footer {
+    display: flex;
+}
+.footer-paragraf {
+    margin-left: auto;
+}
+
+/* For Mobile */
+@media only screen and (max-width: 600px) {
+   .column {
+    flex-direction: column;
+    text-align: justify;
+    margin-right: 90px;
+   }
+   .column h1 {
+    text-align: center;
+   }
+   .column p {
+    margin-left: 50px;
+    width: 110%;
+   }
+   .img-logo {
+    width: 100%;
+    margin-left: 13px;
+    margin-bottom: 20px;
+    align-items: center;
+   }
+   .text {
+    flex-direction: column;
+    padding-right: 30px;
+    justify-content: center;
+   }
+   .text h1 {
+    margin-bottom: 50px;
+   }
+   .text p {
+    text-align: justify;
+   }
+   .img-logo1 {
+    width: 100%;
+    margin-left: 13px;
+    margin-bottom: 20px;
+    align-items: center;
+   }
+}
+
+/* For Tablets */
+@media only screen and (max-width: 840px) {
+    .header-wrapper {
+        flex-direction: column;
+    }
+    .menu {
+        width: 100%;
+        flex-direction: column;
+    }
+    .menu a > button {
+        width: 100%;
+        height: 100%;
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+    .hero {
+        width: 100%;
+        margin: auto;
+        margin-top: 130px;
+    }
+    .gallery {
+        width: 100%;
+    }
+    .gallery p {
+        font-size: 15px;
+    }
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+    .content h1 {
+        text-align: center;
+    }
+    .container h2 {
+        text-align: center;
+    }
+    .textbox {
+        flex-direction: column;
+    }
+    .form-section {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .form-output {
+        margin: 0%;
+        margin-right: 10px;
+    }
+    .footer {
+        margin: auto;
+    }
+}

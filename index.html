@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <title>RevoU Mini Project</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="header-wrapper">
+        <div class="container">
+            <div class="navbar">
+                    <img class="logo" alt="revou-logo" src="assets/jkt48.jpg">
+                <div class="menu">
+                    <button>Home</button>
+                    <a href="profile.html"><button>Our Profile</button></a>
+                    <button>Portofolio</button>
+                    <button>Message Us</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Hero -->
+        <section id="hero">
+            <div class="container">
+                <div class="header">
+                    <div class="hero">
+                        <h1>Hi, Sonya. Welcome To Homepage</h1>
+                        <p>Ini adalah website tugas pertama</p>
+                    </div>
+                    <img class="work" alt="work-space" src="assets/theater1.jpeg" >
+                </div>
+            </div>
+        </section>
+        <hr class="hero-line">
+        <section id="headquarter">
+            <div class="container">
+                <div class="content">
+                    <h1>Our Headquarter</h1>
+                    <div class="gallery">
+                        <div class="city">
+                            <img class="avatar" alt="job-desk" src="assets/akb.png">
+                            <p>Jepang</p>
+                        </div>
+                        <div class="city-1">
+                            <img class="avatar" alt="job-desk" src="assets/bnk.png">
+                            <p>Bangkok</p>
+                        </div>
+                        <div class="city-2">
+                            <img class="avatar" alt="job-desk" src="assets/mnl.png">
+                            <p>Manila</p>
+                        </div>
+                        <div class="city-3">
+                            <img class="avatar" alt="job-desk" src="assets/teamtp.jpg">
+                            <p>Taiwan</p>
+                        </div>
+                        <div class="city-4">
+                            <img class="avatar" alt="job-desk" src="assets/sh.png">
+                            <p>Tiongkok</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Message -->
+        <section id="message-us">
+            <div class="container">
+                <h2>Message Us</h2>
+                <div class="form-section">
+                    <form class="form-input" name="message-form" onsubmit="return validateForm()">
+                        <div class="input-group">
+                            <label class="label">Nama</label> : &ThinSpace;
+                            <input placeholder="Nama" type="text" name="full-name">
+                        </div>
+                        <div class="input-group">
+                            <label class="label">Tanggal Lahir</label> : &ThinSpace;
+                            <input type="date" name="birth-date">
+                        </div>
+                        <div class="input-group">
+                            <label class="label">Jenis Kelamin</label> : &ThinSpace;
+                            <div class="textbox">
+                                <input type="radio" id="male" name="gender" value="Laki-Laki">
+                                <label class="label" for="male">Laki-Laki</label>
+                                <input type="radio" id="female" name="gender" value="Perempuan">
+                                <label class="label" for="female">Perempuan</label>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label class="label">Pesan</label> : &ThinSpace;
+                            <textarea placeholder="Pesan" name="messages" cols="30" rows="3"></textarea>
+                        </div>
+                        <input type="submit" value="Submit" class="submit">
+                    </form>
+
+                    <div class="form-output">
+                        <p>Nama: <span id="sender-full-name"></span></p>
+                        <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+                        <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                        <p>Pesan: <span id="sender-messages"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <p class="footer-paragraf">Created by Sonya Millesya</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/index.js"></script>
+</html>
